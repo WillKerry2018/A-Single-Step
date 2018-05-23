@@ -1,0 +1,17 @@
+> x <- read.csv("hw1.csv")
+> #extract line 38
+> x[,38]
+Error in `[.data.frame`(x, , 38) : undefined columns selected
+> x[38,]
+   Ozone Solar.R Wind Temp Month Day
+38    29     127  9.7   82     6   7
+> mean(x[,1:4])
+[1] NA
+Warning message:
+In mean.default(x[, 1:4]) :
+  argument is not numeric or logical: returning NA
+> mean(x[1:4,])
+[1] NA
+Warning message:
+In mean.default(x[1:4, ]) :
+  argument is not numeric or logical: returning NA
